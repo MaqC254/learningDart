@@ -25,6 +25,32 @@ for (var n in y){
 }
 //for each loop
 y.forEach((n)=> print(n));
+  
+  
+  //Data collections
+  //Lists. These are arrays in other languages
+  List <Object> names = ['Jack','Joe',12,1.3];
+  names[0] = ('Yooh');
+  print(names.length);
+  //Copying a list to another list
+  var names2 = names;// Just points to list names
+  var names3 = [...names];//Copies the values and does not change if first collection is edited
+
+  //Set
+  var cars = {'Mazda','Fors','Subaru'};
+  //To define an empty hashset 
+  var halogens = <String>{};
+  Set hell = {};
+
+  //Map
+  var gifts = {
+    1:'car1',
+    2:'car2'
+  };
+  print(gifts[1]);
+  var fruits = Map();
+  fruits['first'] = 'Mango';
+}
 }
 
 class Num{
